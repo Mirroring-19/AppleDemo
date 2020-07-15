@@ -1,0 +1,58 @@
+.Hbanner{
+	display: flex;
+	height: 624px;
+}
+.Hbanner .baner{
+	/* width: 50%; */
+	flex:1;
+	height: 550px;
+	padding: 0;
+}
+.Hbanner .baner:nth-child(1){
+	margin: 10px 5px 10px 10px;
+	background-image: url(../img/hb1.jpg);
+	background-size:auto 100%;
+}
+.Hbanner .baner:nth-child(2){
+	margin: 10px 10px 10px 5px;
+	background-image: url(../img/hb2.jpg);
+	background-size:auto 100%;
+}
+.Hbanner .baner h1{
+	margin: 0px;
+	padding: 0px;
+	padding-top: 50px;
+	font-size: 30px;
+	font-weight: 600;
+}
+.Hbanner .baner h2{
+	margin: 0px;
+	padding: 0px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	font-size: 18px;
+}
+.Hbanner .baner .link a{
+	margin: 0px;
+	padding: 0px 10px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	font-size: 16px;
+}
+
+/* 媒体设置，设定不同屏幕下的banner和hbanner样式 */
+@media only screen and (max-width:770px) {
+	.Hbanner{
+		flex-direction: column;
+		height: 1248px;
+	}
+	.Hbanner .baner{
+		height: 650px;
+	}
+	.Hbanner .baner:nth-child(1){
+		margin: 10px 0px 10px 0;
+	}
+	.Hbanner .baner:nth-child(2){
+		margin: px 0px 10px 0;
+	}
+}
